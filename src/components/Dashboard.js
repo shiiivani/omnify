@@ -37,7 +37,8 @@ function Dashboard() {
     "Show all service type"
   );
   const [selectedStatus, setSelectedStatus] = useState("Show all");
-  const [selectedDate, setSelectedDate] = useState("");
+  const [selectedFromDate, setSelectedFromDate] = useState("");
+  const [selectedToDate, setSelectedToDate] = useState("");
   const [filterCategory, setFilterCategory] = useState("Scheduled");
   const [selectedRadio, setSelectedRadio] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,10 +51,6 @@ function Dashboard() {
   const [selectedService, setSelectedService] = useState({});
   const [selectAll, setSelectAll] = useState(false);
   const [selectedRow, setSelectedRow] = useState({});
-
-  const handleDateChange = (event) => {
-    setSelectedDate(event.target.value);
-  };
 
   const toggleDropdown = () => setIsOpen(!isOpen);
   const toggleServiceType = () => setServiceTypeOpen(!serviceTypeOpen);
@@ -411,11 +408,16 @@ function Dashboard() {
                             type="date"
                             id="from-date"
                             name="from-date"
-                            value={selectedDate}
-                            onChange={handleDateChange}
-                            className={selectedDate ? "date-selected" : ""}
+                            value={selectedFromDate}
+                            onChange={(event) =>
+                              setSelectedFromDate(event.target.value)
+                            }
+                            style={{
+                              color: selectedFromDate ? "#000" : "#fff",
+                            }}
+                            className={selectedFromDate ? "date-selected" : ""}
                           />
-                          {!selectedDate && (
+                          {!selectedFromDate && (
                             <span className="date-placeholder">
                               Pick a date
                             </span>
@@ -431,8 +433,20 @@ function Dashboard() {
                             id="from-date"
                             name="from-date"
                             placeholder="Pick a date"
+                            value={selectedToDate}
+                            onChange={(event) =>
+                              setSelectedToDate(event.target.value)
+                            }
+                            style={{
+                              color: selectedFromDate ? "#000" : "#fff",
+                            }}
+                            className={selectedToDate ? "date-selected" : ""}
                           />
-                          <span className="date-placeholder">Pick a date</span>
+                          {!selectedToDate && (
+                            <span className="date-placeholder">
+                              Pick a date
+                            </span>
+                          )}
                         </div>
                       </div>
                     </div>
