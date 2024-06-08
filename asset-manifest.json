@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/omnify/static/css/main.a500a042.css",
-    "main.js": "/omnify/static/js/main.23535a23.js",
+    "main.css": "/omnify/static/css/main.93dd48fb.css",
+    "main.js": "/omnify/static/js/main.e146851b.js",
     "static/js/453.2294ed33.chunk.js": "/omnify/static/js/453.2294ed33.chunk.js",
     "static/media/admin.png": "/omnify/static/media/admin.c09c212e854fb7f16cd8.png",
     "static/media/logo.png": "/omnify/static/media/logo.aad69d3443143f3e07e7.png",
@@ -14,12 +14,12 @@
     "static/media/toggle.png": "/omnify/static/media/toggle.179c2354fc058d99eef0.png",
     "static/media/layout-dashboard.png": "/omnify/static/media/layout-dashboard.19f587d4e6dcba27153f.png",
     "index.html": "/omnify/index.html",
-    "main.a500a042.css.map": "/omnify/static/css/main.a500a042.css.map",
-    "main.23535a23.js.map": "/omnify/static/js/main.23535a23.js.map",
+    "main.93dd48fb.css.map": "/omnify/static/css/main.93dd48fb.css.map",
+    "main.e146851b.js.map": "/omnify/static/js/main.e146851b.js.map",
     "453.2294ed33.chunk.js.map": "/omnify/static/js/453.2294ed33.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a500a042.css",
-    "static/js/main.23535a23.js"
+    "static/css/main.93dd48fb.css",
+    "static/js/main.e146851b.js"
   ]
 }
