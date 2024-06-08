@@ -1,0 +1,97 @@
+* {
+    font-family: "Poppins", sans-serif;  
+}
+
+
+.hidden {
+    display: none;
+}
+
+.sidebar {
+    background-color: #F8FAFC;
+    padding: 20px 10px 20px 10px;
+    height: 100%;
+    color: #334155;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    flex-shrink: 0;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.toggle:hover {
+    cursor: pointer;
+}
+.sidebar-list li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    font-weight: 500;
+    font-size: 0.8rem;
+    border-bottom: 1px solid transparent;
+    margin-bottom: 5px;
+}
+
+.sidebar-list img {
+    margin-right: 10px;
+}
+
+.sidebar-list li:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 0 10px 10px;
+    border-bottom: 1px solid #E2E8F0
+}
+
+.sidebar-list li.active {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 8px 0 5px 10px;
+    border-bottom: 1px solid #E2E8F0
+}
+
+.below-section {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    left: 15px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 60px !important;
+    }
+
+    .mobile-width {
+        display: none;
+    }
+    .logo {
+        margin-left: 8px
+    }
+
+    .below-section .admin-container {
+        padding: 0;
+        margin-bottom: 12px;
+    }
+
+   .below-section .adminImg {
+    width: 40px;
+    padding: 8px;
+    background-color: #fff;
+   }
+
+   .below-section .help {
+    margin-left: 10px;
+   }
+
+   .below-section .userImg {
+    margin-right: 0;
+   }
+   .below-section .dashboardImg {
+    margin-left: 12px;
+   }
+}
+
