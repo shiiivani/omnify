@@ -438,7 +438,7 @@ function Dashboard() {
                               setSelectedToDate(event.target.value)
                             }
                             style={{
-                              color: selectedFromDate ? "#000" : "#fff",
+                              color: selectedToDate ? "#000" : "#fff",
                             }}
                             className={selectedToDate ? "date-selected" : ""}
                           />
