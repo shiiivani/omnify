@@ -289,7 +289,10 @@ function Dashboard() {
         <div className="flex items-center justify-between filter-search">
           <div
             className="filter flex p-3 rounded"
-            onClick={() => setFilterContainer(!filterContainer)}
+            onClick={() => {
+              setFilterContainer(!filterContainer);
+              setEditContainer(false);
+            }}
           >
             <FiFilter style={{ fontSize: "1.2rem", marginRight: "5px" }} />
             <p className="text-sm font-medium">Add Filter</p>
@@ -317,7 +320,10 @@ function Dashboard() {
               alt="Icon"
               width="28px"
               className="mr-4 icon-btn"
-              onClick={() => setEditContainer(!editContainer)}
+              onClick={() => {
+                setEditContainer(!editContainer);
+                setFilterContainer(false);
+              }}
             />
             <FiDownload className="icon-btn" style={{ fontSize: "1.6rem" }} />
           </div>
@@ -399,7 +405,7 @@ function Dashboard() {
                         </ul>
                       )}
                     </div>
-                    <div className="flex items-center justify-between mt-6">
+                    <div className="flex items-center justify-between mt-6 date-picker">
                       <div className="date-from">
                         <p className="label">From</p>
                         <div className="custom-date-input">
